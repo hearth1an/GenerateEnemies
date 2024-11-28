@@ -6,9 +6,9 @@ public class SpawnPlatform : MonoBehaviour
 
     public Vector3 GetSpawnPoint()
     {
-        float y = 1.5f;
+        float additionalPosition = 1.5f;
         
-        return new Vector3(transform.position.x, transform.position.y + y, transform.position.z);
+        return new Vector3(transform.position.x, transform.position.y + additionalPosition, transform.position.z);
     }
 
     public Vector3 GetDirection()
