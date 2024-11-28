@@ -8,7 +8,7 @@ public class SpawnPlatform : MonoBehaviour
     {
         float y = 1.5f;
         
-        return new Vector3(transform.position.x, y, transform.position.z);
+        return new Vector3(transform.position.x, transform.position.y + y, transform.position.z);
     }
 
     public Vector3 GetDirection()
