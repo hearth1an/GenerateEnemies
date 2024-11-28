@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Vector3 _moveDirection;
+    private Target _target;
+    private int _speed = 3;
 
     public Quaternion Rotation => transform.rotation;
 
@@ -11,13 +12,13 @@ public class Enemy : MonoBehaviour
         Move();
     }
 
-    public void SetDirection(Vector3 direction)
+    public void SetTarget(Target target)
     {
-        _moveDirection = direction;
+        _target = target;
     }
 
     private void Move()
-    {        
-        transform.position += _moveDirection;
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _target.Position, _speed * Time.deltaTime);        
     }
 }

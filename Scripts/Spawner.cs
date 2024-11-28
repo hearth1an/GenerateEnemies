@@ -27,6 +27,6 @@ public class Spawner : MonoBehaviour
         SpawnPlatform spawnPlatform = PickPlatform();
         Enemy enemy = Instantiate(_enemyPrefab, spawnPlatform.GetSpawnPoint(), _enemyPrefab.Rotation);        
 
-        enemy.SetDirection(spawnPlatform.GetDirection());
+        enemy.SetTarget(spawnPlatform.GetTarget());
     }
 }

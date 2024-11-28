@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnPlatform : MonoBehaviour
 {
-    [SerializeField] private Vector3 _enemyMoveDirection;
+    [SerializeField] private Target _target;
 
     public Vector3 GetSpawnPoint()
     {
@@ -11,8 +11,8 @@ public class SpawnPlatform : MonoBehaviour
         return new Vector3(transform.position.x, transform.position.y + additionalPosition, transform.position.z);
     }
 
-    public Vector3 GetDirection()
-    {        
-        return _enemyMoveDirection;
+    public Target GetTarget()
+    {    
+        return _target;
     }
 }
