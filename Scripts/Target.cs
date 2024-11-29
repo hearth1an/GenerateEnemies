@@ -1,16 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour
-{
-    [SerializeField] Vector3 _startPoint;
-    [SerializeField] Vector3 _endPoint;
+{    
+    [SerializeField] private List<RoutePoint> _routePoints;
 
     private int _speed = 4;
+    private int _currentPointIndex = 0;
+    private int _firstRouteIndex = 0;
     public Vector3 Position => transform.position;   
 
     private void Awake()
     {
-        transform.position = _startPoint;
+        transform.position = _routePoints[_currentPointIndex].Position;
     }
 
     private void Update()
@@ -20,13 +22,19 @@ public class Target : MonoBehaviour
 
     private void Move()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _endPoint, _speed * Time.deltaTime);
+        float minDistance = 0.1f;
 
-        if (transform.position == _endPoint)
+        if (Vector3.Distance(transform.position, _routePoints[_currentPointIndex].Position) < minDistance)
         {
-            Vector3 temp = _startPoint;
-            _startPoint = _endPoint;
-            _endPoint = temp;
+            _currentPointIndex++;
+
+            if (_currentPointIndex >= _routePoints.Count)
+            {
+                _currentPointIndex = _firstRouteIndex;
+                return;
+            }
         }
+
+        transform.position = Vector3.MoveTowards(transform.position, _routePoints[_currentPointIndex].Position, _speed * Time.deltaTime);
     }
 }

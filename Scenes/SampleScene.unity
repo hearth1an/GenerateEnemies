@@ -239,6 +239,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &740526386 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+  m_PrefabInstance: {fileID: 1877068046}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51958f922849c34db569fc70cc962a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &768129353 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3304354767215974702, guid: 114fd20c744f30b499f915006b2b0cdb, type: 3}
@@ -250,6 +261,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734693e0606df384cb3ba45914597f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &831662810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: _endPoint.x
+      value: 7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: _endPoint.y
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: _endPoint.z
+      value: -12.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: _startPoint.x
+      value: -10.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: _startPoint.y
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: _startPoint.z
+      value: -12.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437980154661537330, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040125277540548310, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+      propertyPath: m_Name
+      value: Target (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 3304354767215974702, guid: 114fd20c744f30b499f915006b2b0cdb, type: 3}
       propertyPath: _target
       value: 
-      objectReference: {fileID: 656373178}
+      objectReference: {fileID: 740526386}
     - target: {fileID: 3304354767215974702, guid: 114fd20c744f30b499f915006b2b0cdb, type: 3}
       propertyPath: _enemyMoveDirection.x
       value: -0.01
@@ -674,6 +770,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+--- !u!114 &2125466636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1314421687405757274, guid: eb7f5308f1161f048886b7e9c226d560, type: 3}
+  m_PrefabInstance: {fileID: 831662810}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51958f922849c34db569fc70cc962a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2126603480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -685,7 +792,7 @@ PrefabInstance:
     - target: {fileID: 3304354767215974702, guid: 114fd20c744f30b499f915006b2b0cdb, type: 3}
       propertyPath: _target
       value: 
-      objectReference: {fileID: 656373178}
+      objectReference: {fileID: 2125466636}
     - target: {fileID: 3304354767215974702, guid: 114fd20c744f30b499f915006b2b0cdb, type: 3}
       propertyPath: _enemyMoveDirection.x
       value: -0.01

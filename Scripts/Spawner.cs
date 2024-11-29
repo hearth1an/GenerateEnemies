@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,12 +11,10 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        int time = 0;
-
-        InvokeRepeating(nameof(Spawn), time, _spawnRate);       
+        StartCoroutine(SpawnEnemies());
     }
 
-    private SpawnPlatform PickPlatform()
+    private SpawnPlatform PickRandomPlatform()
     {
         int minPlatformCount = 0;
 
@@ -24,9 +23,18 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        SpawnPlatform spawnPlatform = PickPlatform();
-        Enemy enemy = Instantiate(_enemyPrefab, spawnPlatform.GetSpawnPoint(), _enemyPrefab.Rotation);        
+        SpawnPlatform spawnPlatform = PickRandomPlatform();
+        Enemy enemy = Instantiate(_enemyPrefab, spawnPlatform.GetSpawnPoint(), _enemyPrefab.Rotation);
 
-        enemy.SetTarget(spawnPlatform.GetTarget());
+        enemy.SetTarget(spawnPlatform.Target);
+    }
+
+    private IEnumerator SpawnEnemies()
+    {
+        while (true)
+        {
+            Spawn();
+            yield return new WaitForSeconds(_spawnRate);
+        }
     }
 }
